@@ -9,7 +9,7 @@ package retoelecciones;
  * @author arena
  */
 public class RetoElecciones {
-
+// Comentando el codigo
     /**
      * @param args the command line arguments
      */
