@@ -6,7 +6,7 @@ package retoelecciones;
 
 /**
  *
- * @author arena
+ * @author arenas
  */
 public class RetoElecciones {
 // Comentando el codigo
