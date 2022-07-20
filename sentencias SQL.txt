@@ -1,0 +1,56 @@
+Nombre base de datos: Elecciones
+
+Crear tabla candidatos:
+CREATE TABLE tbl_candidatos(
+	id_candidato VARCHAR(10),
+    nombre VARCHAR(100) NOT NULL,
+    telefono VARCHAR(20),
+    correo VARCHAR(100),
+    partido_politico VARCHAR(100),
+    ciudad_origen VARCHAR(150),
+    mensaje_campania VARCHAR(400),
+    PRIMARY KEY(id_candidato)
+)
+
+Crear tabla votantes:
+CREATE TABLE tbl_votantes(
+	id_votante VARCHAR(10),
+    nombre VARCHAR(100) NOT NULL,
+    telefono VARCHAR(20),
+    correo VARCHAR(100),
+    direccion VARCHAR(100),
+    PRIMARY KEY(id_votante)
+)
+Crear tabla Elecciones:
+CREATE TABLE tbl_elecciones(
+	id_eleccion VARCHAR(10),
+    descripcion VARCHAR(100),
+    categoria VARCHAR(20) NOT NULL,
+    fecha_inicio DATE NOT NULL,
+    fecha_fin DATE NOT NULL,
+    fecha_inscripcion DATE NOT NULL,
+    PRIMARY KEY(id_eleccion)
+)
+
+Crear tabla votos:
+CREATE TABLE tbl_votos(
+	id_voto VARCHAR(10),
+	id_candidato VARCHAR(10),
+    id_votante VARCHAR(10),
+    id_eleccion VARCHAR(10),
+    fecha_voto DATE,
+    PRIMARY KEY(id_voto),
+    FOREIGN KEY(id_candidato) REFERENCES tbl_candidatos(id_candidato),
+    FOREIGN KEY(id_votante) REFERENCES tbl_votantes(id_votante),
+    FOREIGN KEY(id_eleccion) REFERENCES tbl_elecciones(id_eleccion)
+)
+
+Crear tabla Propuestas:
+CREATE TABLE tbl_propuestas(
+	id_propuesta VARCHAR(10),
+    sector VARCHAR(50),
+    descripcion VARCHAR(400),
+    id_candidato VARCHAR(10),
+    PRIMARY KEY(id_propuesta),
+    FOREIGN KEY(id_candidato) REFERENCES tbl_candidatos(id_candidato)
+)
