@@ -17,7 +17,8 @@ public class ClsJdbc {
     String driver = "com.mysql.cj.jdbc.Driver";
     String usuario = "root";
     String contrasenia = "";
-    String url = "jdbc:mysql://localhost:3306/elecciones";
+    String bd = "elecciones";
+    String url = "jdbc:mysql://localhost:3306/" + this.bd;
     
     public Connection conexion;
     

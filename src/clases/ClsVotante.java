@@ -8,10 +8,12 @@ package clases;
  *
  * @author arenas
  */
-public class ClsVotante {
+public class ClsVotante extends ClsPersona {
     private String correoElectronico;
 
-    public ClsVotante() {
+    public ClsVotante(String correoElectronico, String tipoDocumento, int numeroDocumento, String nombre) {
+        super(tipoDocumento, numeroDocumento, nombre);
+        this.correoElectronico = correoElectronico;
     }
 
     public String getCorreoElectronico() {

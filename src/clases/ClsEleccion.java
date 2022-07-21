@@ -4,6 +4,7 @@
  */
 package clases;
 
+import java.util.Date;
 import java.util.LinkedList;
 
 /**
@@ -11,11 +12,23 @@ import java.util.LinkedList;
  * @author arenas
  */
 public class ClsEleccion {
-    LinkedList<String> listaVotantes;
-    LinkedList<String> listaCandidatos;
+    LinkedList<ClsVotante> listaVotantes;
+    LinkedList<ClsCandidato> listaCandidatos;
+    String descripcion;
+    String categoria;
+    Date fecha_inicio;
+    Date fecha_fin;
+    Date fecha_ins;
 
-    public ClsEleccion() {
-        this.listaVotantes = new LinkedList();
-        this.listaCandidatos = new LinkedList();
+    public ClsEleccion(String descripcion, String categoria, Date fecha_inicio, Date fecha_fin, Date fecha_ins) {
+        this.descripcion = descripcion;
+        this.categoria = categoria;
+        this.fecha_inicio = fecha_inicio;
+        this.fecha_fin = fecha_fin;
+        this.fecha_ins = fecha_ins;
+        this.listaCandidatos = new LinkedList<>();
+        this.listaVotantes = new LinkedList<>();
     }
+    
+
 }
