@@ -9,7 +9,7 @@ package controller;
  * @author arena
  */
 public class CtlCandidate {
-
+    
     public Boolean addCandidate(){
         return true;
     }

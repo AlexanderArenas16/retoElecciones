@@ -4,6 +4,8 @@
  */
 package retoelecciones;
 
+import clases.ClsJdbc;
+
 /**
  *
  * @author arenas
@@ -16,7 +18,9 @@ public class RetoElecciones {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // TODO code application logic 
+        ClsJdbc jdbc = new ClsJdbc();
+        jdbc.CrearConnexion();
     }
     
 }
