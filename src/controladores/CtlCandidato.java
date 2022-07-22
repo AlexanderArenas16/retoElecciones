@@ -2,15 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package controller;
+package controladores;
+
+import clases.ClsCandidato;
 
 /**
  *
  * @author arena
  */
-public class CtlCandidate {
+public class CtlCandidato {
 
-    public Boolean addCandidate(){
+    public Boolean addCandidate(ClsCandidato candidato){
         return true;
     }
 }
