@@ -4,13 +4,15 @@
  */
 package controladores;
 
+import clases.ClsCandidato;
+
 /**
  *
  * @author arena
  */
-public class CtlCandidate {
+public class CtlCandidato {
 
-    public Boolean addCandidate(){
+    public Boolean addCandidate(ClsCandidato candidato){
         return true;
     }
 }
