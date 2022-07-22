@@ -4,8 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/arena/OneDrive/Documentos/NetBeansProjects/retoElecciones/src/clases/ClsCandidato.java</file>
+            <file>file:/C:/Users/arena/OneDrive/Documentos/NetBeansProjects/retoElecciones/src/vistas/viewMain.java</file>
             <file>file:/C:/Users/arena/OneDrive/Documentos/NetBeansProjects/retoElecciones/src/clases/ClsEleccion.java</file>
-            <file>file:/C:/Users/arena/OneDrive/Documentos/NetBeansProjects/retoElecciones/src/retoelecciones/RetoElecciones.java</file>
+            <file>file:/C:/Users/arena/OneDrive/Documentos/NetBeansProjects/retoElecciones/src/clases/ClsVotante.java</file>
+            <file>file:/C:/Users/arena/OneDrive/Documentos/NetBeansProjects/retoElecciones/src/vistas/viewCandidate.java</file>
+            <file>file:/C:/Users/arena/OneDrive/Documentos/NetBeansProjects/retoElecciones/src/controladores/CtlCandidato.java</file>
             <file>file:/C:/Users/arena/OneDrive/Documentos/NetBeansProjects/retoElecciones/src/clases/ClsJdbc.java</file>
             <file>file:/C:/Users/arena/OneDrive/Documentos/NetBeansProjects/retoElecciones/src/clases/ClsPersona.java</file>
         </group>
